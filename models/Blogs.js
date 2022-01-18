@@ -21,6 +21,6 @@ const blogSchema = new Schema({
     id: false
 });
 
-const Blog = model('Blog', blogSchema);
+const Blogs = model('Blog', blogSchema);
 
-module.exports = Blog;
+module.exports = Blogs;

@@ -1,12 +1,12 @@
 const router = require('express').Router();
 const {
     getAllBlogs,
-    getBlogId,
+    getBlogById,
     createBlog,
     updateBlog,
     deleteBlog,
 
-} = require('../../controllers/blog-controller.js')
+} = require('../../controllers/blog-controllers')
 
 router.route('/')
     .get(getAllBlogs)
@@ -14,7 +14,7 @@ router.route('/')
 
 router.route('/:id')
     .put(updateBlog)
-    .get(getBlogId)
+    .get(getBlogById)
     .delete(deleteBlog)
 
 module.exports = router;
